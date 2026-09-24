@@ -1,0 +1,52 @@
+// arithmetic operation in c program
+#include<stdio.h>
+#include <conio.h>
+
+void main() {
+    char ch;
+    int a, b,res;
+printf("****Arithmetic operation**** ");
+printf("\nenter num1: ");
+scanf("%d",&a);
+
+    printf("\nChoose an operator \n1.adr\n2.sub\n3.mult\n4.div\n5.mod: ");
+    scanf(" %c", &ch);
+printf("\nenter num2: ");
+scanf("%d",&b);
+   switch (ch) 
+   {
+        case '1':
+         res=a+b;
+            printf("\nAddition is:%d", res) ;
+            break;
+        case '2':
+        res=a-b;
+            printf("\nSub is:%d", res) ;
+            break;
+        case '3':
+        res=a*b;
+            printf("\nmult is:%d", res) ;
+            break;
+        case '4':
+        res=a/b;
+            if (b != 0)
+                printf("\ndiv is:%d", res);
+            else
+                printf("Error! Division by zero is not allowed.\n");
+            break;
+        case '5':
+        res=a%b;
+            if (b != 0)
+                printf("\nmod is:%d", res) ;
+            else
+                printf("Error! Modulo by zero is not allowed.\n");
+            break;
+       default:
+            printf("\n    ERROR!!  ");
+            printf("\nIvalid operator!");
+    }
+
+    getch();
+}
+
+
