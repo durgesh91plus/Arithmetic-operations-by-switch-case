@@ -5,6 +5,7 @@
 void main() {
     char ch;
     int a, b,res;
+clrscr() ;
 printf("****Arithmetic operation**** ");
 printf("\nenter num1: ");
 scanf("%d",&a);
